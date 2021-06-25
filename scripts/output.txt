@@ -1,0 +1,81 @@
+Breakpoint 1 at 0x6d9: file helloworld.c, line 6.
+Breakpoint 2 at 0x720: file helloworld.c, line 16.
+<<<---START--->>>
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:6
+6		int counter = 0;
+[Inferior 1 (process 3791) exited normally]
+<<<---LOOP--->>>
+test.gdb:58: Error in sourced command file:
+No symbol "counter" in current context.
+Breakpoint 1 at 0x6d9: file helloworld.c, line 6.
+Breakpoint 2 at 0x720: file helloworld.c, line 16.
+<<<---START--->>>
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:6
+6		int counter = 0;
+[Inferior 1 (process 3828) exited normally]
+<<<---LOOP--->>>
+test.gdb:58: Error in sourced command file:
+No symbol "counter" in current context.
+Breakpoint 1 at 0x6d9: file helloworld.c, line 6.
+Breakpoint 2 at 0x71e: file helloworld.c, line 16.
+<<<---START--->>>
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:6
+6		int counter = 0;
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:16
+16		while (counter > 0) {
+<<<---LOOP--->>>
+counter value is 10
+[Inferior 1 (process 3898) exited normally]
+test.gdb:58: Error in sourced command file:
+No frame selected.
+Breakpoint 1 at 0x6d9: file helloworld.c, line 6.
+Breakpoint 2 at 0x720: file helloworld.c, line 17.
+<<<---START--->>>
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:6
+6		int counter = 0;
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+<<<---LOOP--->>>
+counter value is 10
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 9
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 8
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 7
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 6
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 5
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 4
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 3
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+counter value is 2
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffdfc8) at helloworld.c:17
+17			printf("hello world\n");
+<<<---END--->>>
