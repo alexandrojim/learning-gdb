@@ -1,6 +1,6 @@
 ; to create the object file:
 ; nasm -f elf64 -g gdb_example.asm -o gdb_example.o
-; to create executable:
+; to create the executable:
 ; ld gdb_example.o -o gdb_example
         segment .data
 a       dd      4   
